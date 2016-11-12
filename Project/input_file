@@ -1,0 +1,16 @@
+// First Comment
+
+Some code 436*& ***/slf + 
+
+/*Block comments:
+All this should be printed
+*/ CODE
+
+
+More code(){
+	indent properly; // function explained
+	return; /* Test block within code */
+}
+
+
+/* End of file */ This shouldn't be printed

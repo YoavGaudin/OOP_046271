@@ -1,4 +1,4 @@
-package question2;
+package hw0q2;
 import java.io.*;
 
 /**
