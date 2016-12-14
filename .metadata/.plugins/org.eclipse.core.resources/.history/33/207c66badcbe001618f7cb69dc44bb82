@@ -1,0 +1,13 @@
+package playground;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class SwingPlayground {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("My Frame");
+		JLable title = new JLabel("My Frame's title");
+		frame.setVisible(true);
+	}
+}
