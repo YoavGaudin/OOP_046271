@@ -1,0 +1,175 @@
+package homework2;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+/**
+ * A Graph is an abstraction for a mathematical graph with sets of <i>Nodes</i> and <i>Edges</i>.
+ * Graphs are immutable.
+ * <p>
+ * <b>Generics:</b>
+ * 	<pre>
+ * NODE_T: the class used for the nodes.
+ * 	</pre>
+ * <b>The following fields are used in the specification:</b>
+ * <pre>
+ *   Nodes : sequence              // 
+ * </pre>
+ * </p>
+ * 
+ * @author yoavg
+ *
+ */
+public final class Graph<NODE_T> {
+	/**
+	 * Abstraction function
+	 * <pre>
+	 * nodes : ArrayList	//	the list of Nodes present in the graph
+	 * and edge between n1 and n2 is represented by the presence of n2 in n1.children
+	 * </pre>
+	 * Representation invariant
+	 * <pre>
+	 * for each pair of nodes, n1 and n2: [n1,n2] is in the graph iff n2 is in n1.children
+	 * </pre>
+	 */
+	private final ArrayList<Node> nodes;
+	private final String name;
+	
+	/**
+	 * The Node class acts as a wrapper for an object of type NODE_T.
+	 * Node is immutable.
+	 * @author yoavg
+	 *
+	 */
+	private final class Node {
+		
+		private final NODE_T node;
+		private final ArrayList<NODE_T> children;
+		
+		/**
+		 * Construct a new Node
+		 * @requires node != null
+		 * @effects Construct a new node, n, such that:
+		 * 			n.node = node and n.children is empty
+		 * 
+		 */
+		public void Node(NODE_T node) {
+			
+		}
+		
+		/**
+		 * TODO: delete if redundant
+		 * @effects Returns a copy of this.
+		 */
+		public NODE_T getNode() {
+			
+		}
+		
+		/**
+		 * @return Returns an Iterator of this node's children
+		 */
+		public Iterator<NODE_T> getChildren() {
+			
+		}
+		
+		/**
+		 * @requires child != null
+		 * @modifies append a <b>copy</b> of child into this.children
+		 */
+		public void addChild(NODE_T child) {
+			
+		}
+	}
+	
+	/**
+	 * Constructor for Graph
+	 * @requires name != null && name != ""
+	 * @effects Construct a new Graph g with g.name=name && g.nodes is empty
+	 */
+	public void Graph(String name) {
+		
+	}
+	
+	/**
+	 * @effects Returns this.name
+	 */
+	public String getName() {
+		return this.name;
+	}
+	
+	/**
+	 * @effects Return an Iterator for this.nodes
+	 */
+	public Iterator<NODE_T> getNodes() {
+		
+	}
+	
+	/**
+	 * @requires node != null
+	 * @effects Return an Iterator for node.children
+	 */
+	public Iterator<NODE_T> getChildren(NODE_T node) {
+		
+	}
+	
+	/**
+	 * @requires
+	 * @modifies
+	 * @effects
+	 * @param name
+	 */
+	public void addNode(NODE_T node) {
+		
+	}
+	
+	/**
+	 * @requires
+	 * @modifies
+	 * @effects
+	 * @param name
+	 */
+	public void addEdge(NODE_T source_node, NODE_T destination_node) {
+		
+	}
+	
+	/**
+	 * @requires
+	 * @modifies
+	 * @effects
+	 * @param name
+	 */
+	public boolean equals(Object o) {
+		
+	}
+	
+	/**
+	 * @requires
+	 * @modifies
+	 * @effects
+	 * @param name
+	 */
+	public int hashCode() {
+		
+	}
+	
+	/**
+	 * @requires
+	 * @modifies
+	 * @effects
+	 * @param name
+	 */
+	public String toString() {
+		
+	}
+	
+	/**
+	 * @requires
+	 * @modifies
+	 * @effects
+	 * @param name
+	 */
+	private void checkRep() {
+		
+	}
+}
