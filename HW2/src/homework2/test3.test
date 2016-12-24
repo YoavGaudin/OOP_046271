@@ -1,0 +1,19 @@
+# test one child, two childs
+
+CreateGraph graph1
+CreateNode n1 5
+CreateNode n2 5
+CreateNode n3 5
+
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+
+AddEdge graph1 n1 n2
+ListChildren graph1 n1
+# test adding the same edge twice has no effect
+AddEdge graph1 n1 n2
+ListChildren graph1 n1
+
+AddEdge graph1 n1 n3
+ListChildren graph1 n1

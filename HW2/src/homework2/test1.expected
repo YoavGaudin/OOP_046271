@@ -1,0 +1,9 @@
+# Test empty graph
+created graph A
+A contains:
+created node n1 with cost 5
+
+# Test no children
+added node n1 to A
+the children of n1 in A are:
+A contains: n1

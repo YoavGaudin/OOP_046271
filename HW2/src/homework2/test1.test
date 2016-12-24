@@ -1,0 +1,9 @@
+# Test empty graph
+CreateGraph A
+ListNodes A
+CreateNode n1 5
+
+# Test no children
+AddNode A n1
+ListChildren A n1
+ListNodes A

@@ -1,0 +1,16 @@
+# Test aliasing, one node, two nodes
+
+CreateGraph graph1
+CreateNode n1 5
+CreateNode n2 5
+CreateNode n3 5
+
+AddNode graph1 n1
+ListNodes graph1
+AddNode graph1 n2
+ListNodes graph1
+AddNode graph1 n3
+ListNodes graph1
+
+AddEdge graph1 n1 n1
+ListChildren graph1 n1

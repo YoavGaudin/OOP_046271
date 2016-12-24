@@ -1,0 +1,19 @@
+# test one child, two childs
+
+created graph graph1
+created node n1 with cost 5
+created node n2 with cost 5
+created node n3 with cost 5
+
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+
+added edge from n1 to n2 in graph1
+the children of n1 in graph1 are: n2
+# test adding the same edge twice has no effect
+added edge from n1 to n2 in graph1
+the children of n1 in graph1 are: n2
+
+added edge from n1 to n3 in graph1
+the children of n1 in graph1 are: n2 n3
