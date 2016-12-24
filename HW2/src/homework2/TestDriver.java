@@ -108,11 +108,8 @@ public class TestDriver {
 
   	private void createGraph(String graphName) {
   		
-  		//TODO: Insert your code here.
-  		
-  		// graphs.put(graphName, ___);
-  		// output.println(...);
-
+  		graphs.put(graphName, new Graph<WeightedNode>(graphName));
+  		output.println("created graph " + graphName);
   	}
  
   	
@@ -130,11 +127,8 @@ public class TestDriver {
 
  	private void createNode(String nodeName, String cost) {
 
- 		// TODO: Insert your code here.
- 		
- 		// nodes.put(nodeName, ___);
- 		// output.println(...);
- 		
+ 		 nodes.put(nodeName, new WeightedNode(nodeName, Integer.parseInt(cost)));
+ 		 output.println("created node " + nodeName + " with cost " + cost);
   	}
 	
 
@@ -152,12 +146,10 @@ public class TestDriver {
 
   	private void addNode(String graphName, String nodeName) {
 
-  		// TODO: Insert your code here.
-  		 
-  		// ___ = graphs.get(graphName);
-  		// ___ = nodes.get(nodeName);
-  		// output.println(...);
-  		
+  		Graph<WeightedNode> graph = graphs.get(graphName);
+  		WeightedNode node = nodes.get(nodeName);
+  		graph.addNode(node);
+  		output.println("added node " + nodeName + " to " + graphName);
   	}
 
 
@@ -176,13 +168,11 @@ public class TestDriver {
 
 	private void addEdge(String graphName, String parentName, String childName) {
 		
-		// TODO: Insert your code here.
-		  
-		// ___ = graphs.get(graphName);
-		// ___ = nodes.get(parentName);
-		// ___ = nodes.get(childName);
-		// output.println(...);
-
+		Graph<WeightedNode> graph = graphs.get(graphName);
+		WeightedNode parent = nodes.get(parentName);
+		WeightedNode child = nodes.get(childName);
+		graph.addEdge(parent, child);
+		output.println("added edge from " + parentName + " to " + childName + " in " + graphName);
   	}
 
 
@@ -199,10 +189,19 @@ public class TestDriver {
 
   	private void listNodes(String graphName) {
   		
-  		// TODO: Insert your code here.
-  		   
-  		// ___ = graphs.get(graphName);
-  		// output.println(...);
+  		Graph<WeightedNode> graph = graphs.get(graphName);
+  		Iterator<WeightedNode> iter = graph.getNodes();
+  		List<String> names = new ArrayList<>();
+  		while(iter.hasNext()) {
+  			names.add(iter.next().getName());
+  		}
+  		String names_str = "";
+  		if (names.size() != 0) {
+  			Collections.sort(names);
+  			names_str = names.toString().replace("[", " ");
+  	  		names_str = names_str.replaceAll(",|\\]", "");
+  		}
+  		output.println(graphName + " contains:"  + names_str);
 
   	}
 
@@ -221,12 +220,21 @@ public class TestDriver {
 
   	private void listChildren(String graphName, String parentName) {
 
-  		// TODO: Insert your code here.
-  		    
-  		// ___ = graphs.get(graphName);
-  		// ___ = nodes.get(parentName);
-  		// output.println(...);
-  		
+  		Graph<WeightedNode> graph = graphs.get(graphName);
+  		WeightedNode parent = nodes.get(parentName);
+  		Iterator<WeightedNode> iter = graph.getChildren(parent);
+  		List<String> names = new ArrayList<>();
+  		while (iter.hasNext()) {
+  			names.add(iter.next().getName());
+  		}
+  		String names_str = "";
+  		if (names.size() != 0) {
+  			Collections.sort(names);
+  			names_str = names.toString().replace("[", " ");
+  	  		names_str = names_str.replaceAll(",|\\]", "");
+  		}
+  		String to_print = "the children of " + parentName + " in " + graphName + " are:" + names_str;
+  		output.println(to_print);  		
   	}
 
 

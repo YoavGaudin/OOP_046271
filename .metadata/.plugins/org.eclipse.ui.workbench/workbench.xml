@@ -17,7 +17,7 @@
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -37,34 +37,48 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="1"/>
+<part id="0"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.internal.EditorStack@3cef7903" ratio="0.5213946" ratioLeft="658" ratioRight="604" relationship="2" relative="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeoSegment.java" partName="GeoSegment.java" path="/home/yoavg/workspace/OOP_046271/HW1/src/homework1/GeoSegment.java" title="GeoSegment.java" tooltip="HW1/src/homework1/GeoSegment.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW1/src/homework1/GeoSegment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2264" selectionTopPixel="1995"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="test2.test" partName="test2.test" path="/home/yoavg/workspace/OOP_046271/HW2/src/homework2/test2.test" title="test2.test" tooltip="HW2/src/homework2/test2.test" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW2/src/homework2/test2.test"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="173" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeoSegmentsDialog.java" partName="GeoSegmentsDialog.java" path="/home/yoavg/workspace/OOP_046271/HW1/src/homework1/GeoSegmentsDialog.java" title="GeoSegmentsDialog.java" tooltip="HW1/src/homework1/GeoSegmentsDialog.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW1/src/homework1/GeoSegmentsDialog.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1040" selectionTopPixel="68"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" partName="Graph.java" path="/home/yoavg/workspace/OOP_046271/HW2/src/homework2/Graph.java" title="Graph.java" tooltip="HW2/src/homework2/Graph.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW2/src/homework2/Graph.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2249" selectionTopPixel="1718"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Route.java" partName="Route.java" path="/home/yoavg/workspace/OOP_046271/HW1/src/homework1/Route.java" title="Route.java" tooltip="HW1/src/homework1/Route.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW1/src/homework1/Route.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="31" selectionOffset="4524" selectionTopPixel="2125"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="example1.test" partName="example1.test" path="/home/yoavg/workspace/OOP_046271/HW2/src/homework2/example1.test" title="example1.test" tooltip="HW2/src/homework2/example1.test" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW2/src/homework2/example1.test"/>
+<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="177" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeoFeature.java" partName="GeoFeature.java" path="/home/yoavg/workspace/OOP_046271/HW1/src/homework1/GeoFeature.java" title="GeoFeature.java" tooltip="HW1/src/homework1/GeoFeature.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW1/src/homework1/GeoFeature.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1879" selectionTopPixel="0"/>
+<editor focus="true" id="org.eclipse.ui.DefaultTextEditor" name="test2.expected" partName="test2.expected" path="/home/yoavg/workspace/OOP_046271/HW2/src/homework2/test2.expected" title="test2.expected" tooltip="HW2/src/homework2/test2.expected" workbook="org.eclipse.ui.internal.EditorStack@3cef7903">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW2/src/homework2/test2.expected"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="201" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="example1.expected" partName="example1.expected" path="/home/yoavg/workspace/OOP_046271/HW2/src/homework2/example1.expected" title="example1.expected" tooltip="HW2/src/homework2/example1.expected" workbook="org.eclipse.ui.internal.EditorStack@3cef7903">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HW2/src/homework2/example1.expected"/>
+<editorState selectionHorizontalPixel="0" selectionLength="34" selectionOffset="215" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
 </view>
 <view id="org.eclipse.jdt.ui.MembersView" partName="Members">
 <viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" org.eclipse.jdt.ui.browsing.memberstoeditor="1">
@@ -90,8 +104,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (5 items)"/>
+<category IMemento.internal.id="Errors (12 items)"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="855" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -148,7 +163,7 @@
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.markerType" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="801" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="801" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="178"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
@@ -305,6 +320,7 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -315,7 +331,6 @@
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
@@ -330,12 +345,13 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.15347071" ratioLeft="283" ratioRight="1561" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.71472394" ratioLeft="699" ratioRight="279" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -344,11 +360,12 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="5"/>
 <part id="4"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.7509628" ratioLeft="1170" ratioRight="388" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="right" ratio="0.8119384" ratioLeft="1265" ratioRight="293" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
@@ -470,174 +487,166 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/RouteFormatterGUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/GeoSegmentsDialog.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/ExampleGeoSegments.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/GeoPoint.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/RouteFormatterGUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/GeoSegmentsDialog.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/playground/SwingPlayground.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/GeoSegment.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/GeoSegmentsDialog.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/Route.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/DrivingRouteFormatter.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/route_finder/GeoFeatureTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/homework1/GeoSegment.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/homework1/GeoSegmentsDialog.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/homework1/Route.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/homework1/DrivingRouteFormatter.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/homework1/GeoFeatureTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW1/src/homework1/GeoFeature.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW2/src/homework2/ScriptFileTests.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/test1.expected"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/test1.actual"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/test2.test"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/test2.expected"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HW2/src/homework2/Graph.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/test1.test"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/test1.expected"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/example1.test"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HW2/src/homework2/example1.expected"/>
 </editors>
-<item historyLabel="RouteFormatterGUI.java" index="0">
-<position info="not_deleted" x="2349" y="0"/>
+<item historyLabel="ScriptFileTests.java" index="0">
+<position info="not_deleted" x="3438" y="0"/>
 </item>
-<item historyLabel="GeoSegmentsDialog.java" index="1">
-<position/>
+<item historyLabel="test1.expected" index="1">
+<position info="not_deleted" x="158" y="0"/>
 </item>
-<item historyLabel="GeoSegmentsDialog.java" index="1">
-<position info="not_deleted" x="3206" y="0"/>
+<item historyLabel="test1.actual" index="2">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="GeoSegmentsDialog.java" index="1">
-<position info="not_deleted" x="2035" y="0"/>
+<item historyLabel="test1.expected" index="1">
+<position info="not_deleted" x="158" y="0"/>
 </item>
-<item historyLabel="RouteFormatterGUI.java" index="0">
-<position info="not_deleted" x="2349" y="0"/>
-</item>
-<item historyLabel="GeoSegmentsDialog.java" index="1">
-<position info="not_deleted" x="1977" y="0"/>
-</item>
-<item historyLabel="RouteFormatterGUI.java" index="0">
-<position info="not_deleted" x="1153" y="34"/>
-</item>
-<item historyLabel="GeoSegmentsDialog.java" index="1">
-<position info="not_deleted" x="1977" y="0"/>
-</item>
-<item historyLabel="GeoSegmentsDialog.java" index="1">
-<position info="not_deleted" x="2132" y="0"/>
-</item>
-<item historyLabel="ExampleGeoSegments.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="GeoPoint.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ExampleGeoSegments.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="RouteFormatterGUI.java" index="4">
-<position info="not_deleted" x="1153" y="34"/>
-</item>
-<item historyLabel="GeoSegmentsDialog.java" index="5">
-<position info="not_deleted" x="2132" y="0"/>
-</item>
-<item historyLabel="SwingPlayground.java" index="6">
+<item historyLabel="test2.test" index="3">
 <position info="not_deleted" x="173" y="0"/>
 </item>
-<item historyLabel="GeoSegment.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="test1.actual" index="2">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="GeoSegment.java" index="7">
-<position info="not_deleted" x="1912" y="0"/>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
 </item>
-<item historyLabel="GeoSegmentsDialog.java" index="8">
-<position info="not_deleted" x="4468" y="0"/>
+<item historyLabel="test1.actual" index="2">
+<position info="not_deleted" x="170" y="0"/>
 </item>
-<item historyLabel="GeoSegmentsDialog.java" index="8">
-<position info="not_deleted" x="1043" y="0"/>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
 </item>
-<item historyLabel="GeoSegment.java" index="7">
-<position info="not_deleted" x="1912" y="0"/>
-</item>
-<item historyLabel="Route.java" index="9">
-<position/>
-</item>
-<item historyLabel="GeoSegment.java" index="7">
-<position info="not_deleted" x="1773" y="0"/>
-</item>
-<item historyLabel="Route.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="GeoSegment.java" index="7">
-<position info="not_deleted" x="1773" y="0"/>
-</item>
-<item historyLabel="Route.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Route.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SwingPlayground.java" index="6">
+<item historyLabel="test2.test" index="3">
 <position info="not_deleted" x="173" y="0"/>
 </item>
-<item historyLabel="Route.java" index="9">
+<item historyLabel="Graph.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DrivingRouteFormatter.java" index="10">
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
+</item>
+<item historyLabel="test1.test" index="6">
+<position info="not_deleted" x="19" y="13"/>
+</item>
+<item historyLabel="Graph.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GeoSegmentsDialog.java" index="8">
-<position info="not_deleted" x="1043" y="0"/>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
 </item>
-<item historyLabel="GeoFeatureTest.java" index="11">
+<item historyLabel="test1.test" index="6">
+<position info="not_deleted" x="45" y="15"/>
+</item>
+<item historyLabel="Graph.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GeoSegment.java" index="12">
-<position info="not_deleted" x="1773" y="0"/>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
 </item>
-<item historyLabel="GeoSegment.java" index="12">
-<position info="not_deleted" x="1770" y="0"/>
-</item>
-<item historyLabel="GeoSegmentsDialog.java" index="13">
-<position info="not_deleted" x="1043" y="0"/>
-</item>
-<item historyLabel="GeoSegmentsDialog.java" index="13">
-<position info="not_deleted" x="1040" y="0"/>
-</item>
-<item historyLabel="Route.java" index="14">
+<item historyLabel="Graph.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DrivingRouteFormatter.java" index="15">
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
+</item>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
+</item>
+<item historyLabel="test1.expected" index="7">
+<position info="not_deleted" x="19" y="15"/>
+</item>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
+</item>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="0" y="29"/>
+</item>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
+</item>
+<item historyLabel="test1.expected" index="7">
+<position info="not_deleted" x="47" y="27"/>
+</item>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
+</item>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
+</item>
+<item historyLabel="test1.test" index="6">
+<position info="not_deleted" x="81" y="12"/>
+</item>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
+</item>
+<item historyLabel="test1.expected" index="7">
+<position info="not_deleted" x="95" y="18"/>
+</item>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="197" y="0"/>
+</item>
+<item historyLabel="test1.expected" index="7">
+<position info="not_deleted" x="95" y="18"/>
+</item>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="197" y="0"/>
+</item>
+<item historyLabel="example1.test" index="8">
+<position info="not_deleted" x="177" y="20"/>
+</item>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
+</item>
+<item historyLabel="example1.expected" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GeoFeatureTest.java" index="16">
-<position info="not_deleted" x="1004" y="0"/>
+<item historyLabel="example1.test" index="8">
+<position info="not_deleted" x="177" y="20"/>
 </item>
-<item historyLabel="GeoFeatureTest.java" index="16">
-<position info="not_deleted" x="1001" y="0"/>
+<item historyLabel="example1.expected" index="9">
+<position info="not_deleted" x="215" y="34"/>
 </item>
-<item historyLabel="DrivingRouteFormatter.java" index="15">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="test1.expected" index="7">
+<position info="not_deleted" x="95" y="18"/>
 </item>
-<item historyLabel="Route.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="197" y="0"/>
 </item>
-<item historyLabel="GeoSegmentsDialog.java" index="13">
-<position info="not_deleted" x="1040" y="0"/>
+<item historyLabel="example1.test" index="8">
+<position info="not_deleted" x="177" y="20"/>
 </item>
-<item historyLabel="GeoSegment.java" index="12">
-<position info="not_deleted" x="1770" y="0"/>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
 </item>
-<item historyLabel="GeoFeatureTest.java" index="16">
-<position info="not_deleted" x="1001" y="0"/>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
 </item>
-<item historyLabel="GeoSegment.java" index="12">
-<position info="not_deleted" x="2264" y="0"/>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="233" y="0"/>
 </item>
-<item historyLabel="Route.java" index="14">
-<position info="not_deleted" x="2468" y="0"/>
+<item historyLabel="Graph.java" index="5">
+<position info="not_deleted" x="2249" y="0"/>
 </item>
-<item historyLabel="GeoFeature.java" index="17">
-<position info="not_deleted" x="1879" y="0"/>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="244" y="0"/>
 </item>
-<item historyLabel="Route.java" index="14">
-<position info="not_deleted" x="4524" y="31"/>
+<item historyLabel="test2.test" index="3">
+<position info="not_deleted" x="173" y="0"/>
 </item>
-<item historyLabel="GeoSegment.java" index="12">
-<position info="not_deleted" x="2264" y="0"/>
+<item historyLabel="test2.expected" index="4">
+<position info="not_deleted" x="201" y="6"/>
 </item>
-<item active="true" historyLabel="GeoFeature.java" index="17">
-<position info="not_deleted" x="1879" y="0"/>
+<item active="true" historyLabel="Graph.java" index="5">
+<position info="not_deleted" x="2249" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -656,32 +665,38 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeoFeature.java" tooltip="HW1/src/homework1/GeoFeature.java">
-<persistable path="/HW1/src/homework1/GeoFeature.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="example1.expected" tooltip="HW2/src/homework2/example1.expected">
+<persistable path="/HW2/src/homework2/example1.expected"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AngleDistance.java" tooltip="HW1/src/playground/AngleDistance.java">
-<persistable path="/HW1/src/playground/AngleDistance.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="example1.test" tooltip="HW2/src/homework2/example1.test">
+<persistable path="/HW2/src/homework2/example1.test"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SwingPlayground.java" tooltip="HW1/src/playground/SwingPlayground.java">
-<persistable path="/HW1/src/playground/SwingPlayground.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="test1.expected" tooltip="HW2/src/homework2/test1.expected">
+<persistable path="/HW2/src/homework2/test1.expected"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WalkingRouteFormatter.java" tooltip="HW1/src/route_finder/WalkingRouteFormatter.java">
-<persistable path="/HW1/src/route_finder/WalkingRouteFormatter.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="test1.test" tooltip="HW2/src/homework2/test1.test">
+<persistable path="/HW2/src/homework2/test1.test"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExampleGeoSegments.java" tooltip="HW1/src/route_finder/ExampleGeoSegments.java">
-<persistable path="/HW1/src/route_finder/ExampleGeoSegments.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" tooltip="HW2/src/homework2/Graph.java">
+<persistable path="/HW2/src/homework2/Graph.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RouteFormatter.java" tooltip="HW1/src/route_finder/RouteFormatter.java">
-<persistable path="/HW1/src/route_finder/RouteFormatter.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="test2.expected" tooltip="HW2/src/homework2/test2.expected">
+<persistable path="/HW2/src/homework2/test2.expected"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="JFrame.class" tooltip="javax.swing.JFrame">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=HW1/\/usr\/lib\/jvm\/java-7-openjdk-amd64\/jre\/lib\/rt.jar&lt;javax.swing(JFrame.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="test2.test" tooltip="HW2/src/homework2/test2.test">
+<persistable path="/HW2/src/homework2/test2.test"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RouteFormatterGUI.java" tooltip="HW1/src/route_finder/RouteFormatterGUI.java">
-<persistable path="/HW1/src/route_finder/RouteFormatterGUI.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="test1.actual" tooltip="HW2/src/homework2/test1.actual">
+<persistable path="/HW2/src/homework2/test1.actual"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="constant-values.html" tooltip="HW1/doc/constant-values.html">
-<persistable path="/HW1/doc/constant-values.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ScriptFileTests.java" tooltip="HW2/src/homework2/ScriptFileTests.java">
+<persistable path="/HW2/src/homework2/ScriptFileTests.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WeightedNode.java" tooltip="HW2/src/homework2/WeightedNode.java">
+<persistable path="/HW2/src/homework2/WeightedNode.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphTests.java" tooltip="HW2/src/homework2/GraphTests.java">
+<persistable path="/HW2/src/homework2/GraphTests.java"/>
 </file>
 </mruList>
 </workbench>

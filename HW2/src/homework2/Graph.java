@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -19,7 +18,7 @@ import java.util.Set;
  * 	</pre>
  * <b>The following fields are used in the specification:</b>
  * <pre>
- *   Nodes : sequence              // 
+ *   nodes : sequence              // 
  * </pre>
  * </p>
  * 
@@ -38,7 +37,7 @@ public final class Graph<NODE_T> {
 	 * for each node, the list of it's children does not contain duplicate nodes
 	 * </pre>
 	 */
-	private final Map<NODE_T, List<NODE_T>> nodes;
+	private final Map<NODE_T, Set<NODE_T>> nodes;
 	private final String name;
 	
 	/**
@@ -66,8 +65,7 @@ public final class Graph<NODE_T> {
 	 */
 	public Iterator<NODE_T> getNodes() {
 		this.checkRep();
-		Set<NODE_T> nodes = (Set<NODE_T>) ((HashMap<NODE_T, List<NODE_T>>) this.nodes).keySet();
-		this.checkRep();
+		Set<NODE_T> nodes = (Set<NODE_T>) ((HashMap<NODE_T, Set<NODE_T>>) this.nodes).keySet();
 		return new ArrayList<NODE_T>(nodes).iterator();
 	}
 	
@@ -84,37 +82,40 @@ public final class Graph<NODE_T> {
 	/**
 	 * @requires node != null
 	 * @modifies this
-	 * @effects adds node to this.nodes 
+	 * @effects adds node to this.nodes and create a new set for it's children
 	 */
 	public void addNode(NODE_T node) {
 		this.checkRep();
-		this.nodes.put(node, new ArrayList<NODE_T>());
+		this.nodes.put(node, new HashSet<NODE_T>());
 	}
 	
 	/**
-	 * @requires source_node != null && destination_node != null && destination_node is not in source_node.children
+	 * @requires source_node != null
+	 * 				&& destination_node != null 
+	 * 				&& destination_node is not in source_node.children
+	 * 				&& this.nodes has a key 'source_node' with value != null
 	 * @modifies source_node
 	 * @effects adds destination_node to source_node's children
 	 */
 	public void addEdge(NODE_T source_node, NODE_T destination_node) {
 		this.checkRep();
-		List<NODE_T> children = this.nodes.get(source_node);
-		if (children == null) {
-			children = new ArrayList<NODE_T>();
-		}
+		Set<NODE_T> children = this.nodes.get(source_node);
 		children.add(destination_node);
-		this.nodes.put(source_node, children);
 		this.checkRep();
 	}
 	
 	/**
 	 * Compares the specified Object with this Graph for equality.
-	 * @effects Returns true iff o is an instance of Graph &&
+	 * @effects Returns true iff o is an instance of Graph<NODE_T> &&
 	 * 						this.name = o.name
 	 */
 	public boolean equals(Object o) {
 		this.checkRep();
-		return (o instanceof Graph<?>) && ((Graph<?>)o).name.equals(this.name);
+		if (o instanceof Graph<?>) {
+			Graph<?> g = (Graph<?>)o;
+			return (g.name.equals(this.name) && g.nodes.equals(this.nodes));
+		}
+		return false;
 	}
 	
 	/**
@@ -122,7 +123,7 @@ public final class Graph<NODE_T> {
 	 */
 	public int hashCode() {
 		this.checkRep();
-		return 1;
+		return this.name.hashCode();
 	}
 	
 	/**
@@ -138,9 +139,6 @@ public final class Graph<NODE_T> {
 	 * @effects Throws AssertionError if representation invariant is violated.
 	 */
 	private void checkRep() {
-		for (List<NODE_T> children: this.nodes.values()) {
-			Set<NODE_T> children_as_set = new HashSet<>(children);
-			assert (children.size() == children_as_set.size());
-		}
+		// representation invariant is uphold by implementing list of children as a set 
 	}
 }
