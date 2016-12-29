@@ -16,7 +16,6 @@ public class GraphTests extends ScriptFileTests {
 		super(testFile);
 	}
 
-	// TODO: add additional white box tests
 	@Test
 	public void testEquals() {
 		// setup objects:

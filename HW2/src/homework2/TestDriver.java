@@ -280,10 +280,29 @@ public class TestDriver {
   		
   		// TODO: Insert your code here.
   		   
-  		// ___ = graphs.get(graphName);
-  		// ___ = nodes.get(sourceArgs.get(i));
-  		// ___ = nodes.get(destArgs.get(i));
-  		// output.println(...);
+  		Graph<WeightedNode> graph = graphs.get(graphName);
+  		Set<WeightedNodePath> starts = new HashSet<>();
+  		for (int i=0 ; i<sourceArgs.size() ; ++i) {
+  			starts.add(new WeightedNodePath(nodes.get(sourceArgs.get(i))));
+  		}
+  		Set<WeightedNodePath> goals = new HashSet<>();
+  		for (int i=0 ; i<destArgs.size() ; ++i) {
+  			goals.add(new WeightedNodePath(nodes.get(destArgs.get(i))));
+  		}
+  		PathFinder<WeightedNode, WeightedNodePath> finder = new PathFinder<>();
+  		WeightedNodePath short_path = (WeightedNodePath) finder.findPath(graph, starts, goals);
+  		if (short_path != null) {
+  			String path_str = "";
+  			Iterator<WeightedNode> iter = short_path.iterator();
+  			while (iter.hasNext()) {
+  				path_str += " " + iter.next().getName();
+  			}
+  			
+  			output.println("shortest path in " + graphName + ":" + path_str);
+  		} else {
+  			output.println("no path found in " + graphName);
+  		}
+  		
 		
   	}
 
