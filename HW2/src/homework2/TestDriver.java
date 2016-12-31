@@ -281,16 +281,16 @@ public class TestDriver {
   		// TODO: Insert your code here.
   		   
   		Graph<WeightedNode> graph = graphs.get(graphName);
-  		Set<WeightedNodePath> starts = new HashSet<>();
+  		List<WeightedNodePath> starts = new ArrayList<WeightedNodePath>();
   		for (int i=0 ; i<sourceArgs.size() ; ++i) {
   			starts.add(new WeightedNodePath(nodes.get(sourceArgs.get(i))));
   		}
-  		Set<WeightedNodePath> goals = new HashSet<>();
+  		List<WeightedNode> goals = new ArrayList<WeightedNode>();
   		for (int i=0 ; i<destArgs.size() ; ++i) {
-  			goals.add(new WeightedNodePath(nodes.get(destArgs.get(i))));
+  			goals.add(nodes.get(destArgs.get(i)));
   		}
-  		PathFinder<WeightedNode, WeightedNodePath> finder = new PathFinder<>();
-  		WeightedNodePath short_path = (WeightedNodePath) finder.findPath(graph, starts, goals);
+  		PathFinder<WeightedNode, WeightedNodePath> finder = new PathFinder<WeightedNode, WeightedNodePath>(graph);
+  		WeightedNodePath short_path = (WeightedNodePath) finder.findPath(starts, goals);
   		if (short_path != null) {
   			String path_str = "";
   			Iterator<WeightedNode> iter = short_path.iterator();
@@ -305,7 +305,6 @@ public class TestDriver {
   		
 		
   	}
-
 
 	private static void printUsage() {
 		System.err.println("Usage:");

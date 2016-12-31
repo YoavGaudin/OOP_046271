@@ -1,74 +1,82 @@
 package homework2;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.PriorityQueue;
+import java.util.*;
 
-/**
- * @author yoavg
- *<p>
- * A PathFinder is a class used to find the shortest path in a graph
- *<p>
- * This class implements an algorithm similar to Dijkstra's algorithm.
- * The details of the algorithm are specified in the exercise instructions   
- *</p>
- *<b>The following fields are used in the specification:</b>
- * <pre>
- *   paths : sequence   		// a container of paths
- * </pre>
- *The first generic argument (<tt>N</tt>) is the type of nodes in the path.
- * The second generic argument (<tt>P</tt>) is the type of Path used
- */
-public class PathFinder<N, P extends Path<N, P>> {
+public class PathFinder<N,P extends Path<N,P>> {
 
-	/**
-	 * PathFinder constructors:
-	 * @effects Creates a new PathFinder.
-	 */
-	public PathFinder() {
-	}
+	private Graph<N> m_g;
 	
-	/**
-	 * findPath: The main method of PathFinder- runs the algorithm to find shortest path in a graph
-	 * @requires
-	 * <pre>starts != null && is a list of 'one node' paths
-	 * && goals != null && is a list of 'one node' paths
-	 * && g != null </pre>
-	 * @effects 
-	 * <pre>Returns a shortest path from one of starts to one of goals if exists
-	 * null otherwise </pre>
+	/*
+	 * constructs a new PathFinder.
+	 * @requires g != null
+	 * @effects creates a PathFinder with the relevant Graph in it.
 	 */
-	public Path<N ,P> findPath(Graph<N> g, Set<P> starts, Set<P> goals){
-		Map<N,P> paths = new HashMap<>();
-		for (P node_iter: starts) {
-			paths.put(node_iter.getEnd(), node_iter);
+	public PathFinder(Graph<N> g){
+		this.m_g= g;
+	}	
+	
+	/*
+	 *Return the shortest path from one element of starts to one
+	 *element of goals in a node-weighted graph.
+	 *@requires starts, goals != null.
+	 *@return the shortest path from one of the starts to one of the goals. null if o such path exists.
+	*/
+	
+	public P findPath(List<P> starts, List<N> goals){
+		
+		Map<N,P> paths = new HashMap<N,P>();
+		PriorityQueue<P> active = new PriorityQueue<P>();
+		List<N> finished = new ArrayList<N>();	// The set of finished nodes are those for which we know the shortest
+								// paths from starts and whose children we have already examined	
+		// maps nodes -> paths
+		// The priority queue contains nodes with priority equal to the cost
+		// of the shortest path to reach that node. Initially it contains the
+		// start nodes
+		for (int i = 0; i<starts.size(); i++){
+			paths.put(starts.get(i).getEnd(), starts.get(i));
+			active.add(starts.get(i));
 		}
 		
-		PriorityQueue<P> active = new PriorityQueue<P>(starts);
-		Set<N> finished = new HashSet<>();
-		
-		while (active.size() > 0) {
-			P queue_min = active.poll();
-			N curr_node = queue_min.getEnd();
-			for (P goal: goals) {
-				if (goal.getEnd().equals(curr_node)) {
-					return queue_min;
-				}
+		while (!active.isEmpty()){			
+			// queueMin is the element of active with shortest path
+			P queueMin = active.poll();
+			N nodeMin = queueMin.getEnd();//last node in the path extracted
+			P queueMinPath = paths.get(nodeMin);//path to the nodeMin
+			
+			if (goals.contains(nodeMin)) {
+				return queueMinPath;
 			}
-			Iterator<N> iter = g.getChildren(curr_node);
-			while (iter.hasNext()) {
-				N child = iter.next();
-				P c_path = queue_min.extend(child);
-				if (!finished.contains(child) && !active.contains(c_path)) {
-					paths.put(child, c_path);
-					active.add(c_path);
-				}
+			
+			// iterate over edges (queueMin, c) in queueMin.edges
+			Iterator<N> nodeIterator = m_g.getChildren(nodeMin);
+			
+			while(nodeIterator.hasNext()){
+				N c = nodeIterator.next();
+				P cPath  = queueMinPath.extend(c);
+							
+				if(!finished.contains(c)){//c isn't in finished
+					//all of this is done because we had to use pathes instead of nodes 
+					//in active, and there for finding whether or not a node is the final
+					//node in a path and still an active node, became relatively complicated.					
+					Iterator<P> pathIterator = active.iterator();
+					int flag = 0;
+					while(pathIterator.hasNext()){
+						if(c == pathIterator.next().getEnd()){
+							flag = 1;
+						}
+					}
+					
+					if(flag ==0){// means the node isn't active yet
+						paths.put(c, cPath);
+						active.add(cPath);			
+					}
+				}	
 			}
-			finished.add(curr_node);
+			
+			finished.add(nodeMin);
 		}
-		return null;
-	}
+
+	return null;
+	};
 }
+
